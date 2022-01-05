@@ -276,7 +276,7 @@ public class CSVReaderADMP1
 				.withTimeout(Duration.ofSeconds(20))
 				.pollingEvery(Duration.ofSeconds(3))
 				.ignoring(NoSuchElementException.class);
-		String defaultadmurl="http://demo.admanagerplus.com/#/mgmt";
+		String defaultadmurl="";
 		driver.navigate().to(defaultadmurl);
 		//screenshot("ADManager",outputpath);
 		JavascriptExecutor js= (JavascriptExecutor)driver;
